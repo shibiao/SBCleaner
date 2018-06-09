@@ -12,6 +12,7 @@
 		04B114EB20C9616400891F70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B114EA20C9616400891F70 /* Assets.xcassets */; };
 		04B114EE20C9616400891F70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B114EC20C9616400891F70 /* Main.storyboard */; };
 		04B114F120C9616400891F70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B114F020C9616400891F70 /* main.m */; };
+		51B1CCEC20CA68E200F9F9AA /* PermissionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B1CCEB20CA68E200F9F9AA /* PermissionTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		04B114EF20C9616400891F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B114F020C9616400891F70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04B114F220C9616400891F70 /* SBCleaner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SBCleaner.entitlements; sourceTree = "<group>"; };
+		51B1CCEA20CA68E200F9F9AA /* PermissionTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermissionTool.h; sourceTree = "<group>"; };
+		51B1CCEB20CA68E200F9F9AA /* PermissionTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PermissionTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 				04B114E520C9616300891F70 /* AppDelegate.m */,
 				04B114E720C9616300891F70 /* ViewController.h */,
 				04B114E820C9616300891F70 /* ViewController.m */,
+				51B1CCEA20CA68E200F9F9AA /* PermissionTool.h */,
+				51B1CCEB20CA68E200F9F9AA /* PermissionTool.m */,
 				04B114EA20C9616400891F70 /* Assets.xcassets */,
 				04B114EC20C9616400891F70 /* Main.storyboard */,
 				04B114EF20C9616400891F70 /* Info.plist */,
@@ -101,6 +106,11 @@
 				TargetAttributes = {
 					04B114E020C9616300891F70 = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -141,6 +151,7 @@
 			files = (
 				04B114E920C9616300891F70 /* ViewController.m in Sources */,
 				04B114F120C9616400891F70 /* main.m in Sources */,
+				51B1CCEC20CA68E200F9F9AA /* PermissionTool.m in Sources */,
 				04B114E620C9616300891F70 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
